@@ -1,0 +1,23 @@
+# Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
+                
+type Query {
+    hello: String!
+    helloWithName(name: String): String!
+    peopleNumber: Int!
+    booksList: [Book!]!
+}
+
+# Informacion de los libros 
+type Book {
+     
+    id: ID!
+    title: String!
+    isbn: String!
+    pageCount: Int!
+    publishedDate: String
+    thumbnailUrl: String
+    shortDescription: String
+    longDescription: String
+    status: String
+    authors: [String!]!
+}
